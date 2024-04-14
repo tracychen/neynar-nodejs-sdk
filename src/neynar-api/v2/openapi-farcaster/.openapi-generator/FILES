@@ -45,6 +45,7 @@ models/casts-response-result.ts
 models/casts-response.ts
 models/channel-list-response.ts
 models/channel-response.ts
+models/channel-viewer-context.ts
 models/channel.ts
 models/conversation-response.ts
 models/conversation.ts

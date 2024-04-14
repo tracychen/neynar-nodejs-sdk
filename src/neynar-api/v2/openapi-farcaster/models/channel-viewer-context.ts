@@ -15,22 +15,16 @@
 
 
 /**
- * Adds context on the viewer\'s follow relationship with the user.
+ * 
  * @export
- * @interface UserViewerContext
+ * @interface ChannelViewerContext
  */
-export interface UserViewerContext {
+export interface ChannelViewerContext {
     /**
-     * 
+     * Indicates if the viewer is following the channel.
      * @type {boolean}
-     * @memberof UserViewerContext
+     * @memberof ChannelViewerContext
      */
     'following': boolean;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof UserViewerContext
-     */
-    'followed_by': boolean;
 }
 
