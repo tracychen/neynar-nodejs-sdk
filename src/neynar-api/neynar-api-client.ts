@@ -2471,6 +2471,7 @@ export class NeynarAPIClient {
    * @param {boolean} [options.castReactionContext] - Adds viewer_context inside the cast object to indicate whether the interactor reacted to the cast housing the frame.
    * @param {boolean} [options.followContext] - Adds viewer_context inside the user (interactor) object to indicate whether the interactor follows or is followed by the cast author.
    * @param {boolean} [options.signerContext] - Adds context about the app used by the user inside `frame.action`.
+   * @param {boolean} [options.channelFollowContext] - Adds viewer_context inside the cast object to indicate whether the interactor reacted to the cast housing the frame.
    *
    * @returns {Promise<ValidateFrameActionResponse>} A promise that resolves to a `ValidateFrameActionResponse` object,
    *   indicating the outcome of the frame action validation, potentially enriched with specified contexts.
@@ -2490,6 +2491,7 @@ export class NeynarAPIClient {
       castReactionContext?: boolean;
       followContext?: boolean;
       signerContext?: boolean;
+      channelFollowContext?: boolean;
     }
   ): Promise<ValidateFrameActionResponse> {
     return await this.clients.v2.validateFrameAction(
